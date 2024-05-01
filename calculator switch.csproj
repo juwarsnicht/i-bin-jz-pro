@@ -1,0 +1,26 @@
+﻿Console.WriteLine("Bitte erste Zahl!!!");
+int number1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Bitte zweite Zahl!!!");
+int number2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Hallo, was soll i mit den Zahlen machen!?");
+string Rechenzeichen = Console.ReadLine();
+
+switch(Rechenzeichen)
+{
+    case "+":
+        Console.WriteLine("Das Ergebnis ist: " + (number1 + number2));
+        break;
+    case "-":
+        Console.WriteLine("Das Ergebnis ist: " + (number1 - number2));
+        break;
+    case "*":
+        Console.WriteLine("Das Ergebnis ist: " + (number1 * number2));
+        break;
+    case "/":
+        Console.WriteLine("Das Ergebnis ist: " + (number1 / number2));
+        break;
+    default:
+        Console.WriteLine("Bist du dumm???!!!");
+        break;
+}   
+
